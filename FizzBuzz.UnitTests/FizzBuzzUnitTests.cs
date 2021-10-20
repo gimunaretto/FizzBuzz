@@ -64,5 +64,18 @@ namespace FizzBuzz.UnitTests
             //Averiguar
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void FizzBuzz_OfZero_ReturnsFizzBuzz()
+        {
+            //Arranjar
+            var expected = "FizzBuzz";
+
+            //Acionar
+            var actual = sut.GetFizzBuzz(0);
+
+            //Averiguar
+            Assert.Equal(expected, actual);
+        }
     }
 }
